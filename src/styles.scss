@@ -1,0 +1,40 @@
+@import "vanilla-framework";
+@include vanilla;
+
+body {
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.p-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  border-top: 3px solid #a87ca0;
+  max-width: 350px;
+  box-shadow: 0 1px 5px lightgrey;
+
+  .header {
+    padding: 0 0.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .content {
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    border-top: 1px dotted lightgray;
+    flex-grow: 1;
+  }
+
+  .footer {
+    border-top: 1px dotted lightgray;
+    padding: 1rem 0.5rem 0 0.5rem;
+  }
+}
