@@ -64,7 +64,6 @@ function createCard(e) {
 async function main() {
   const data = await getAPI();
   data.map((e) => {
-    console.log(e);
     const card = createCard(e);
     cardContainer.append(card);
   });
